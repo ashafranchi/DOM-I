@@ -93,12 +93,18 @@ visionHeading.textContent = siteContent['main-content']['vision-h4'];
 let visionContent = vision.querySelector('p');
 visionContent.textContent = siteContent['main-content']['vision-content'];
 
-let contactHeading = document.querySelector()
-let contactAddress = document.querySelector()
-let contactPhone = document.querySelector('.contact p')[1];
+let contact = document.querySelector('.contact');
+
+let contactHeading = document.querySelector('.contact h4');
+contactHeading.textContent = siteContent['contact']['contact-h4'];
+let contactAddress = document.querySelector('.contact p');
+contactAddress.textContent = siteContent['contact']['address'];
+let contactPhone = document.querySelector('.contact p');
 contactPhone.textContent = siteContent['contact']['phone'];
-let contactEmail = document.querySelector('.contact p')[2];
+let contactEmail = document.querySelector('.contact p');
 contactEmail.textContent = siteContent['contact']['email'];
 
 let footer = document.querySelector('footer p');
 footer.textContent = siteContent.footer.copyright;
+
+document.querySelector('button').setAttribute('style', 'background-color: green; color: white; border-radius: 3px;');
